@@ -24,7 +24,9 @@ jobs:
 
     - name: Build the Docker image and push to Docker Hub
       working-directory: web-app
-      run: docker build . --file Dockerfile --tag deahox/lab3-devops:$(date +%s)
-           docker push deahox/lab3-devops:$(date +%s)
+      env: 
+       IMAGE_TAG: ${{ .github.sha }}
+      run: docker build . --file Dockerfile --tag deahox/lab3-devops:$IMAGE_TAG
+           docker push deahox/lab3-devops:$IMAGE_TAG
 
     

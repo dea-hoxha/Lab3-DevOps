@@ -15,4 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file web-app/Dockerfile --tag deahox/lab3-devops:$(date +%s)
+      working-directory: web-app
+      run: docker build . --file Dockerfile --tag deahox/lab3-devops:$(date +%s)

@@ -48,8 +48,8 @@ ingress:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:313422618945:certificate/4aaf790e-dc80-4071-88b4-a8f496bcb2c9
-    alb.ingress.kubernetes.io/tags: Name=appstellar-training-alb-dev, Environment=dev
-    alb.ingress.kubernetes.io/group.name: appstellar-training
+    alb.ingress.kubernetes.io/tags: Name=appstellar-training-dea-hoxha, Environment=dev
+    alb.ingress.kubernetes.io/group.name: appstellar-training-dea-hoxha
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
   hosts:

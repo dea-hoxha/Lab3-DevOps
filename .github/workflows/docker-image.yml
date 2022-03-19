@@ -27,7 +27,8 @@ jobs:
       env:
        IMAGE_TAG: ${{ github.sha }}
       run: |
-        docker build . --file Dockerfile --tag deahox/lab3-devops:$IMAGE_TAG
+        docker build . --file Dockerfile --tag deahox/lab3-devops:$IMAGE_TAG --tag deahox/lab3-devops:latest
         docker push deahox/lab3-devops:$IMAGE_TAG
+        docker push deahox/lab3-devops:latest
 
     

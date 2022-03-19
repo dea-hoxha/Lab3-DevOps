@@ -9,7 +9,7 @@ replicaCount: 1
   repository: deahox/lab3-devops
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "c63c741319bfab1d29fd1194731be1d249035f88"
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""

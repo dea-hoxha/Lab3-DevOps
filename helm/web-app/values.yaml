@@ -41,7 +41,7 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations:
     kubernetes.io/ingress.class: alb
@@ -56,7 +56,7 @@ ingress:
     - host: dea-hoxha.web.appstellar.training
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: Prefix
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

@@ -4,11 +4,12 @@
 
 replicaCount: 1
 
-image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+ image:
+  registry: docker.io
+  repository: deahox/lab3-devops
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "c63c741319bfab1d29fd1194731be1d249035f88"
 
 imagePullSecrets: []
 nameOverride: ""
